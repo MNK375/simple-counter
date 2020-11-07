@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Counter</title>
+</head>
+<body>
+
+  <h1>COUNTER</h1>
+
+  <div id="disp-counter"></div>
+  <button id="up">COUNT UP</button>
+  <button id="down">COUNT DOWN</button>
+`
+
+  <script>
+      var count = 0;
+      var disp_counter=document.getElementById('disp-counter');
+      var up=document.getElementById('up');
+      var down = document.getElementById('down');
+
+      
+      up.addEventListener('click', function(){
+        count += 1;
+        disp_counter.innerHTML= count;
+      })
+
+      down.addEventListener('click', function(){
+        count -= 1;
+        disp_counter.innerHTML= count;
+      })
+
+
+  </script>
+  
+</body>
+</html>
